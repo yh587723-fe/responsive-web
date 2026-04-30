@@ -50,17 +50,17 @@
             </div>
 
             <ul class="tab-btn">
-                <li><button>대출베스트</button></li>
-                <li><button>공공도서관 인기도서</button></li>               
+                <li class="btn-a active"><button>대출베스트</button></li>
+                <li class="btn-b"><button>공공도서관 인기도서</button></li>               
             </ul>
 
 
-            <div class="loan-best-area-a main-content">
+            <div class="loan-best-area-a main-contents">
                 <h2 class="blind">검색어를 입력하세요.</h2>
                 <form action="" method="post">
                     <fieldset>
                         <ul title="도서관선택" class="ul-tit">
-                            <li>전체도서관</li>
+                            <li class="active">전체도서관</li>
                             <li>용잉중앙도서관</li>
                             <li>구갈희망누리도서관</li>
                             <li>구성도서관</li>
@@ -77,7 +77,7 @@
                     </fieldset>
                     <fieldset>
                         <ul title="기간선택" class="ul-tit">
-                        <li>기간선택</li>
+                        <li class="active">기간선택</li>
                         <li>6달 이내</li>
                         <li>3달 이내</li>
                         <li>1달 이내</li>
@@ -87,7 +87,7 @@
                         </ul>
                         </fieldset>                  
                 </form>
-                <button><span>돋보기</span>검색</button>
+                <p class="search-btn"><button><span>돋보기</span>검색</button></p>
                     
                 <div class="icon-btn-area">
                     <p><button class="view-all">전체보기</button></p>
@@ -105,125 +105,163 @@
                     </ul>
                 </div>
 
-                    <ul class="img-list-area">
-                        <li><img src="" alt=""><span>도서</span>파뿌리</li>
-                        <li><img src="" alt=""><span>도서</span>놓지마 정신줄!!: 완전판. 19</li>
-                        <li><img src="" alt=""><span>도서</span>(설민석의) 한국사 대모험.27 ,최재형 편</li>
-                        <li><img src="" alt=""><span>도서</span>빨간내복야코 어린이 상식: 이거 모르면 지구인 아님. 1, 속담</li>
-                        <li><img src="" alt=""><span>도서</span>슈뻘맨의 숨은 과학 찾기. 5: 엉뚱 도전 속에 숨은 과학 상식</li>
-                        <li><img src="" alt=""><span>도서</span>극한견주 : 사모예드 솜이와 함께하는 극한 인생!. 4</li>
-                        <li><img src="" alt=""><span>도서</span>뽀짜툰. 6</li>
-                        <li><img src="" alt=""><span>도서</span>흔한남매. 2</li>
-                        <li><img src="" alt=""><span>도서</span>이상한 과자 가게 전천당. 1</li>
-                        <li><img src="" alt=""><span>도서</span>이상한 과자 가게 전천당. 2</li>
-                        <li><img src="" alt=""><span>도서</span>흔한남매. 5</li>
-                        <li><img src="" alt=""><span>도서</span>최강 배틀왕 : 결정판</li>  
-                    </ul>
+                    <div class="img-list-area">
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>파뿌리</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>놓지마 정신줄!!: 완전판. 19</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>(설민석의) 한국사 대모험.27 ,최재형 편</li>
+                            
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>빨간내복야코 어린이 상식: 이거 모르면 지구인 아님. 1, 속담</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>슈뻘맨의 숨은 과학 찾기. 5: 엉뚱 도전 속에 숨은 과학 상식</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>극한견주 : 사모예드 솜이와 함께하는 극한 인생!. 4</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>뽀짜툰. 6</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>흔한남매. 2</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>이상한 과자 가게 전천당. 1</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>이상한 과자 가게 전천당. 2</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>흔한남매. 5</li>
+                        </ul>
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><span>도서</span>최강 배틀왕 : 결정판</li>
+                        </ul>
+
+                    </div>
                     
                 
             </div>
 
 
-            <div class="popular-books-area main-content">
+            <div class="popular-books-area main-contents">
                 <form action="" method="post">
                     <fieldset>
                         <legend>성별</legend>
-                        <input type="radio" id="" name="" value="">
-                        <label for="">전체</label>
-                        <input type="radio" id="" name="" value="">
-                        <label for="">남자</label>
-                        <input type="radio" id="" name="" value="">
-                        <label for="">여자</label>
+                        <input type="radio" id="userAll" name="user" value="1">
+                        <label for="userall">전체</label>
+                        <input type="radio" id="male" name="user" value="2">
+                        <label for="male">남자</label>
+                        <input type="radio" id="female" name="user" value="3">
+                        <label for="female">여자</label>
                         
 
                     </fieldset>
                     <fieldset>
                         <legend>연령대</legend>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">전체</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">영유아(0~5세)</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">유아(6~7세)</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">초등(8~13세)</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">청소년(14~19세)</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">20대</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">30대</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">40대</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">50대</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">60대이상</label>
+                        <input type="checkbox" id="userageall" name="useraAge" value="1">
+                        <label for="userageall">전체</label>
+                        <input type="checkbox" id="userage1" name="useraAge" value="2">
+                        <label for="userage1">영유아(0~5세)</label>
+                        <input type="checkbox" id="userage2" name="useraAge" value="3">
+                        <label for="userage2">유아(6~7세)</label>
+                        <input type="checkbox" id="userage3" name="useraAge" value="4">
+                        <label for="userage3">초등(8~13세)</label>
+                        <input type="checkbox" id="userage4" name="useraAge" value="5">
+                        <label for="userage4">청소년(14~19세)</label>
+                        <input type="checkbox" id="userage5" name="useraAge" value="6">
+                        <label for="userage5">20대</label>
+                        <input type="checkbox" id="userage6" name="useraAge" value="7">
+                        <label for="userage7">30대</label>
+                        <input type="checkbox" id="userage8" name="useraAge" value="8">
+                        <label for="userage8">40대</label>
+                        <input type="checkbox" id="userage9" name="useraAge" value="9">
+                        <label for="userage9">50대</label>
+                        <input type="checkbox" id="userage10" name="useraAge" value="10">
+                        <label for="userage10">60대이상</label>
 
                     </fieldset>
                     <fieldset>
                         <legend>지역</legend>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">전체</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">서울</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">대구</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">충북</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">인천</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">충남</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">광주</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">전북</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">대전</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">전남</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">울산</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">경북</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">경남</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">제주</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">세종</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">경기</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">부산</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">강원</label>
+                        <input type="checkbox" id="areaAll" name="area" value="1">
+                        <label for="areaAll">전체</label>
+                        <input type="checkbox" id="area1" name="area" value="2">
+                        <label for="area1">서울</label>
+                        <input type="checkbox" id="area2" name="area" value="3">
+                        <label for="area2">대구</label>
+                        <input type="checkbox" id="area3" name="area" value="4">
+                        <label for="area3">충북</label>
+                        <input type="checkbox" id="area4" name="area" value="5">
+                        <label for="area4">인천</label>
+                        <input type="checkbox" id="area5" name="area" value="6">
+                        <label for="area5">충남</label>
+                        <input type="checkbox" id="area6" name="area" value="7">
+                        <label for="area6">광주</label>
+                        <input type="checkbox" id="area7" name="area" value="8">
+                        <label for="area7">전북</label>
+                        <input type="checkbox" id="area8" name="area" value="9">
+                        <label for="area8">대전</label>
+                        <input type="checkbox" id="area9" name="area" value="10">
+                        <label for="area9">전남</label>
+                        <input type="checkbox" id="area10" name="area" value="11">
+                        <label for="area10">울산</label>
+                        <input type="checkbox" id="area11" name="area" value="12">
+                        <label for="area11">경북</label>
+                        <input type="checkbox" id="area12" name="area" value="13">
+                        <label for="area12">경남</label>
+                        <input type="checkbox" id="area13" name="area" value="14">
+                        <label for="area13">제주</label>
+                        <input type="checkbox" id="area14" name="area" value="15">
+                        <label for="area14">세종</label>
+                        <input type="checkbox" id="area15" name="area" value="16">
+                        <label for="area15">경기</label>
+                        <input type="checkbox" id="area16" name="area" value="17">
+                        <label for="area16">부산</label>
+                        <input type="checkbox" id="area17" name="area" value="18">
+                        <label for="area17">강원</label>
                     </fieldset>
                     <fieldset>
                         <legend>주제</legend>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">전체</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">총류</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">철학</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">종교</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">사회과학</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">자연과학</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">기술과학</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">예술</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">언어</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">문학</label>
-                        <input type="checkbox" id="" name="" value="">
-                        <label for="">역사</label>
+                        <input type="checkbox" id="topicAll" name="topic" value="">
+                        <label for="topicAll">전체</label>
+                        <input type="checkbox" id="topic1" name="topic" value="">
+                        <label for="topic1">총류</label>
+                        <input type="checkbox" id="topic2" name="topic" value="">
+                        <label for="topic2">철학</label>
+                        <input type="checkbox" id="topic3" name="topic" value="">
+                        <label for="topic3">종교</label>
+                        <input type="checkbox" id="topic4" name="topic" value="">
+                        <label for="topic4">사회과학</label>
+                        <input type="checkbox" id="topic5" name="topic" value="">
+                        <label for="topic5">자연과학</label>
+                        <input type="checkbox" id="topic6" name="topic" value="">
+                        <label for="topic6">기술과학</label>
+                        <input type="checkbox" id="topic7" name="topic" value="">
+                        <label for="topic7">예술</label>
+                        <input type="checkbox" id="topic8" name="topic" value="">
+                        <label for="topic8">언어</label>
+                        <input type="checkbox" id="topic9" name="topic" value="">
+                        <label for="topic9">문학</label>
+                        <input type="checkbox" id="topic10" name="topic" value="">
+                        <label for="topic10">역사</label>
                         
                         
                     </fieldset>
@@ -233,12 +271,12 @@
                         <span>~</span>
                         <input type="text" name="" id="" value="2026-04-29">
 
-                        <input type="radio" id="" name="" value="">
-                        <label for="">금년</label>
-                        <input type="radio" id="" name="" value="">
-                        <label for="">금월</label>
-                        <input type="radio" id="" name="" value="">
-                        <label for="">금주</label>
+                        <input type="radio" id="time1" name="time" value="">
+                        <label for="time1">금년</label>
+                        <input type="radio" id="time2" name="time" value="">
+                        <label for="time2">금월</label>
+                        <input type="radio" id="time3" name="time" value="">
+                        <label for="time3">금주</label>
                         
                     </fieldset>
                     <fieldset>
@@ -261,10 +299,10 @@
                     
 
                 </form>
-                <div class="btn-area">
-                    <button>초기화</button>
-                    <button>검색</button>
-                </div>
+                <ul class="tab-btn">
+                    <li class=""><button>초기화</button></li>
+                    <li><button>검색</button></li>
+                </ul>
                     
 
                

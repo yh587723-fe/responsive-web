@@ -5,14 +5,58 @@ h1 {font-size: 26px;}
 #main .main-top { padding: 20px 8px; background-color: blanchedalmond; border-bottom: 1px solid #e2e2e2;}
 #main .main-content { padding-top: 30px; }
 #main .loan-best-area-a form {display: flex;}
-.tab-btn {display: flex;}
+form ul li{
+    border: 1px solid #e2e2e2;
+    display: none;
+}
+form ul li.active { 
+    display: block;
+}
+form ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-btn li {
+    min-width: 50%;
+}
 
-.ul-tit li 
+
+.loan-best-area-a form {
+    background-color: #f7f7f7;
+}
+.loan-best-area-a .search-btn {
+    text-align: center;
+    background-color: #000;
+}
+.search-btn button {
+    color: #fff;
+    
+}
+
+.img-list-area {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.img-list-area li {
+    
+}
+.img-list-area ul {
+    flex: 0 0 calc(50% - 4px);
+}
+
+
 
 
 .icon-btn-area {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #555;
 }
 .icon-btn-area .view-all { width: 80px; flex-shrink: 0;}
 
@@ -30,19 +74,26 @@ h1 {font-size: 26px;}
     height: 80px;
 }
 
-.img-list-area {
-    display: flex;
+
+input {
+    appearance: auto;
+    width: auto;
 }
+label {
+    min-width: 50px;
+    height: 34px;
+    border: 1px solid #c8c8c8;;
+}
+fieldset { background-color: #f7f7f7; border-bottom: 1px solid #ddd;}
 
 
+.card dt { font-size: 16px; }
 
 
-
-
-
-
-
-
+@media screen and (max-width: 767px){
+.post-cont .blind-m {display: none;}
+.post-cont .date {width: 80px;}
+}
 
 
 
