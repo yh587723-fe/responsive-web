@@ -1,0 +1,62 @@
+
+
+
+.tab-btn {display: flex;}
+
+fieldset { 
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+form { }
+form ul li{
+    border: 1px solid #e2e2e2;
+    display: none;
+}
+form ul li.active { 
+    display: block;
+}
+form ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-btn {
+    margin: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-btn li {
+    min-width: 33%;
+}
+
+.form-bottom { 
+    display: flex;
+}
+table {
+    border-top: 2px solid #555;
+}
+.paging-box { text-align: center; }
+table thead { border-bottom: 1px solid #ababab; }
+table tbody tr { border-bottom: 1px solid #e4e4e4; }
+
+/* 두번째 컨텐츠영역*/
+
+.job-post {background-color: antiquewhite;}
+
+
+/* 세번째 컨텐츠영역*/
+
+
+
+.promo-list .img-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.img-area {background-color: #bdbdbd; }
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+
+.archive { 
+    padding: 30px 10px;
+    background-color: beige;
+}
+.archive .sub-tit {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.archive dl {
+    padding: 0 15px;
+}
+.res-list { 
+    display: flex; 
+    flex-wrap: wrap;
+
+} 
+.main-contents {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 767px){
+    .res-list ul{
+        width: calc(33% - 6px);
+        height: 124px;
+        margin: 3px;
+        background-color: bisque;
+    }
+}
