@@ -11,33 +11,49 @@
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
-            <ul>
-                <li>
-                    <dl>
-                        <dt>통합자료검색</dt>
-                        <dd>간략검색</dd>
-                        <dd>상세검색</dd>
-                        <dd>자료검색 도움말</dd>
-                    </dl>
-                </li>
-                <li>주제별자료검색</li>
-                <li>신착자료검색</li>
-                <li>대출인기도서</li>
-                <li>스마트도서관자료검색</li>
-                <li>구독자료검색</li>
-                <li>희망도서신청</li>
-                <li>희망도서바로대출</li>
-                <li>
-                    <dl>
-                        <dt>디지털자료</dt>
-                        <dd>바로가기</dd>
-                        <dd>이용안내</dd>
-                    </dl>
-                </li>
+    <div class="container inner">
+        <aside id="aside" class="blind-m" >
+            <h1>자료검색</h1>
+            <div class="side-tab">
+                
+                <dl>
+                    <dt>통합자료검색</dt>
+                    <dd>간략검색</dd>
+                    <dd>상세검색</dd>
+                    <dd>자료검색 도움말</dd>
+                </dl>
+            
+                <dl>
+                    <dt>주제별자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>신착자료검색</dt>
+                </dl>
+                <dl class="active">
+                    <dt>대출인기도서</dt>
+                </dl>
+               
+                <dl>
+                    <dt>스마트도서관자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>구독자료검색</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서신청</dt>
+                </dl>
+                <dl>
+                    <dt>희망도서바로대출</dt>
+                </dl>
+                   
+                <dl>
+                    <dt>디지털자료</dt>
+                    <dd>바로가기</dd>
+                    <dd>이용안내</dd>
+                </dl>
+                
 
-            </ul>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
             <div class="main-top">
@@ -50,47 +66,45 @@
             </div>
 
             <ul class="tab-btn">
-                <li class="btn-a active"><button>대출베스트</button></li>
-                <li class="btn-b"><button>공공도서관 인기도서</button></li>               
+                <li class="active"><button>대출베스트</button></li>
+                <li><button>공공도서관 인기도서</button></li>               
             </ul>
 
 
             <div class="loan-best-area-a main-contents">
                 <h2 class="blind">검색어를 입력하세요.</h2>
-                <form action="" method="post">
-                    <fieldset>
-                        <ul title="도서관선택" class="ul-tit">
-                            <li class="active">전체도서관</li>
-                            <li>용잉중앙도서관</li>
-                            <li>구갈희망누리도서관</li>
-                            <li>구성도서관</li>
-                            <li>기흥도서관</li>
-                            <li>남사도서관</li>
-                            <li>동백도서관</li>
-                            <li>동천도서관</li>
-                            <li>모현도서관</li>
-                            <li>보라도서관</li>
-                            <li>보정도서관</li>
-                            <li>수지도서관</li>
-                        </ul>
-
-                    </fieldset>
-                    <fieldset>
-                        <ul title="기간선택" class="ul-tit">
-                        <li class="active">기간선택</li>
-                        <li>6달 이내</li>
-                        <li>3달 이내</li>
-                        <li>1달 이내</li>
-                        <li>3주 이내</li>
-                        <li>2주 이내</li>
-                        <li>1주 이내</li>
-                        </ul>
-                        </fieldset>                  
-                </form>
-                <p class="search-btn"><button><span>돋보기</span>검색</button></p>
-                    
+                <div class="form-area">
+                    <form action="" method="post">
+                        <fieldset>
+                            <ul title="도서관선택" class="ul-tit">
+                                <li class="active">전체도서관</li>
+                                <li>용잉중앙도서관</li>
+                                <li>구갈희망누리도서관</li>
+                                <li>구성도서관</li>
+                                <li>기흥도서관</li>
+                                <li>남사도서관</li>
+                                <li>동백도서관</li>
+                                <li>동천도서관</li>
+                                <li>모현도서관</li>
+                                <li>보라도서관</li>
+                                <li>보정도서관</li>
+                                <li>수지도서관</li>
+                            </ul>
+                            <ul title="기간선택" class="ul-tit">
+                            <li class="active">기간선택</li>
+                            <li>6달 이내</li>
+                            <li>3달 이내</li>
+                            <li>1달 이내</li>
+                            <li>3주 이내</li>
+                            <li>2주 이내</li>
+                            <li>1주 이내</li>
+                            </ul>
+                        </fieldset>                 
+                    </form>
+                    <p class="search-btn"><button><span>돋보기</span>검색</button></p>
+                </div>   
                 <div class="icon-btn-area">
-                    <p><button class="view-all">전체보기</button></p>
+                    <p><button class="view-all active">전체보기</button></p>
                     <ul class="icon-btn">
                         <li><button>총류</button></li>
                         <li><button>철학</button></li>

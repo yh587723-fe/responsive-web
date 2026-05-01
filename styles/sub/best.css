@@ -1,12 +1,18 @@
 
 
 h1 {font-size: 26px;}
-#main { padding: 20px;}
+
 #main .main-top { padding: 20px 8px; border-bottom: 1px solid #e2e2e2; border-top: 1px solid #e2e2e2;;}
 #main .main-content { padding-top: 30px; }
 #main .loan-best-area-a form {display: flex;}
 dl, dt, dd { font-size: inherit; }
 
+.loan-best-area-a fieldset { display: flex; }
+.loan-best-area-a .form-area {
+    margin-bottom: 25px;
+    padding: 20px 15px;
+    background-color: #f7f7f7;
+}
 .tab-btn {
     margin: 24px 0;
     display: flex;
@@ -21,6 +27,7 @@ dl, dt, dd { font-size: inherit; }
     background-color: #f7f7f7;
 }
 .loan-best-area-a .search-btn {
+    margin-top: 6px;
     text-align: center;
     background-color: #000;
 }
@@ -51,20 +58,33 @@ dl, dt, dd { font-size: inherit; }
     padding-bottom: 30px;
     border-bottom: 1px solid #555;
 }
-.icon-btn-area .view-all { width: 80px; flex-shrink: 0; justify-content: center;}
+.icon-btn-area .view-all { 
+    height: 100%;
+    width: 80px; 
+    flex-shrink: 0; 
+    justify-content: center;
+    border-radius: 5px;
 
+}
+.icon-btn-area .active { border: 1px solid #000;}
 .icon-btn {
     display: flex;
     flex-wrap: wrap;
     width: 100%;  
 }
 .icon-btn li {
-    margin-left: 5px;
-    width: calc(20% - 5px)
+    margin-left: 4px;
+    margin-bottom: 4px;
+    width: calc(20% - 5px);
+    border-radius: 5px;
+}
+.icon-btn:last-child {
+    margin-bottom: 0;
 }
 .icon-btn button {
     width: 100%;
     height: 80px;
+    
 }
 
 
@@ -91,7 +111,7 @@ dl, dt, dd { font-size: inherit; }
 .popular-books-area fieldset dd {
     flex-wrap: wrap;
     width: 76%;
-    padding: 20px;
+    padding: 10px 20px;
 }
 .loanPeriod {
     width: 100%;
@@ -105,7 +125,7 @@ dl, dt, dd { font-size: inherit; }
 }
 
 fieldset dl { border-bottom: 1px solid #ddd;}
-fieldset 
+
 
 
 
@@ -142,7 +162,11 @@ fieldset
 
 
 /*폼 체크박스 라디오버튼*/
-form ul li{
+.popular-books-area form { 
+    border-top: 2px solid #555;
+    border-bottom: 1px solid #e4e4e4;;
+}
+ form ul li{
     border: 1px solid #e2e2e2;
     display: none;
 }
@@ -164,6 +188,7 @@ input[type="radio"], input[type="checkbox"] {
     display: none;
 }
 label {
+    display: inline-block;
     padding: 2px 10px;
     margin: 4px 0;
     border: 1px solid #e2e2e2;
