@@ -74,6 +74,7 @@ dl, dt, dd { font-size: inherit; }
 
 .img-list-area .img-area {
     background-color: #bdbdbd;
+    
 }
 .img-list-area ul {
     flex: 0 0 calc(50% - 4px);
@@ -175,17 +176,18 @@ dl, dt, dd { font-size: inherit; }
 }
 
 fieldset dl { border-bottom: 1px solid #ddd;}
-
+.card-area { border-bottom: 1px solid #e2e2e2; }
 .card dt { font-size: 16px; }
 .card {
 
     display: flex;
     padding: 20px 0;
     gap: 16px;
-    border-bottom: 1px solid #e2e2e2;
+    
  }
 .card .img-area {
- 
+    width: 98px;
+    height: 136px;
     background-color: #bdbdbd; 
 } 
 .best-book-list li:first-child {
