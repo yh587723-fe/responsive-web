@@ -123,6 +123,15 @@ dl, dt, dd { font-size: inherit; }
     width: 160px;
 
 }
+.popular-books-area dd button {
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+    font-weight: 500;
+    padding: 1px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 1.4;
+}
 
 fieldset dl { border-bottom: 1px solid #ddd;}
 
