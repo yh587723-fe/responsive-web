@@ -1,8 +1,5 @@
 
 
-
-.tab-btn {display: flex;}
-
 fieldset { 
     background-color: #f7f7f7;
     border-bottom: 1px solid #ddd;
@@ -19,18 +16,21 @@ form ul li.active {
     width: 100%;
 }
 form ul {
-    display: flex;
-    
+    display: flex;   
+    flex: 1;
     flex-wrap: wrap;
     background-color: #fff;
 }
 .tab-btn {
+   
     margin: 24px 0;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
 }
 .tab-btn li {
     min-width: 33%;
+    padding: 5px;
     
 }
 
@@ -59,7 +59,7 @@ table tbody tr { border-bottom: 1px solid #e4e4e4; }
 
 /* 두번째 컨텐츠영역*/
 
-.job-post {background-color: antiquewhite;}
+/* .job-post {background-color: antiquewhite;} */
 
 
 /* 세번째 컨텐츠영역*/
@@ -160,26 +160,27 @@ th {
 }
 
 td.date { color: #464646; }
-
+td { padding: 10px 6px; }
 
 @media screen and (max-width: 767px){
-.post-cont .blind-m {display: none;}
-.date { width: 80px; }
-.post-cont .table-list {
-    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
-    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
-    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
-}
-.promo-list .img-list .text-area {
-    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
-    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
-    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
-}
-.promo-list .img-list .text-area {
-    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
-    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
-    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    .tab-btn li { font-size: 18px; }
+    .post-cont .blind-m {display: none;}
+    .date { width: 100px; }
+    .post-cont .table-list {
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
     }
+    .promo-list .img-list .text-area {
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .promo-list .img-list .text-area {
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+        }
 
 }
 
@@ -211,7 +212,7 @@ td.date { color: #464646; }
 
 @media screen and (min-width: 1023px){
     .post-cont .blind-m {display: block;}
-    .date { width: 100px; }
+    .date { width: 120px; }
     .promo-list .img-list{
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr)); 
@@ -234,6 +235,8 @@ td.date { color: #464646; }
     .file {
         width: 50px;
     }
-    .view-n { width: 50px; }
+    .view-n { width: 80px; }
+    fieldset { display: flex; gap: 4px;}
+    fieldset
     
 }
