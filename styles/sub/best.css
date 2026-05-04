@@ -19,8 +19,13 @@ dl, dt, dd { font-size: inherit; }
     flex-wrap: wrap;
 }
 .tab-btn li {
-    min-width: 50%;
+
+    min-width: 40%;
+    text-align: center;
 }
+
+.ul-tit { width: 100%; }
+.ul-tit li{ width: 100%; }
 
 
 .loan-best-area-a form {
@@ -43,14 +48,27 @@ dl, dt, dd { font-size: inherit; }
     gap: 8px;
 }
 
+
 .img-list-area .img-area {
     background-color: #bdbdbd;
 }
 .img-list-area ul {
     flex: 0 0 calc(50% - 4px);
 }
+.img-list-area .text {
+    width: 100%;
+    display: flex;
+    min-height: 50px;
+}
 
-
+.text-tit {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* 몇 줄까지 보여줄지 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: clip;
+    
+}
 
 
 .icon-btn-area {
@@ -158,16 +176,7 @@ fieldset dl { border-bottom: 1px solid #ddd;}
     border: 1px solid #727272;
 }
 
-
 .paging-box { text-align: center; }
-
-
-@media screen and (max-width: 767px){
-.post-cont .blind-m {display: none;}
-.post-cont .date {width: 80px;}
-}
-
-
 
 
 /*폼 체크박스 라디오버튼*/
@@ -204,9 +213,45 @@ label {
     background-color: #fff;
 }
 
+.text-area { width: 100%; }
+
+
+@media screen and (max-width: 767px){
+    
+.post-cont .blind-m {display: none;}
+.post-cont .date {width: 80px;}
+.card .text-area button { height: 42px;}
+
+}
+
+@media screen and (min-width: 768px){
+.post-cont .blind-m {display: block;}
+.date { width: 100px; }
+.img-list-area {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+.card .text-area button { height: 42px;}
+}
+
+
+@media screen and (min-width: 1023px){
+.post-cont .blind-m {display: block;}
+.date { width: 100px; }
+.img-list-area {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.form-area { display: flex; }
+.card { position: relative; }
+.card .text-area {display: flex;}
+.card .text-area button { position: absolute; top:75px; right: 8px; width: 170px; height: 54px;}
+}
 
 
 
-/* @media screen and (max-width:px){}
-
-@media screen and (min-width:px){} */

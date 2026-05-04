@@ -72,7 +72,6 @@ table tbody tr { border-bottom: 1px solid #e4e4e4; }
 .text-area span {display: block;}
 .text-area .txt {
     flex: 1;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -143,18 +142,98 @@ th {
 
 .table-list tr {}
 
-.post-cont .table-list {
-    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
-    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
-    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
-}
+
 .post-cont table {
     table-layout: fixed;
+    width: 100%;
 }
 
+.post-cont tr:first-child td {
+        border-top: 0 none;
+        
+    }
+.post-cont td {
+    border-bottom: 0 none;
+}
+.post-cont tr:last-child td {
+    border-bottom: 0 none;
+}
+
+td.date { color: #464646; }
 
 
 @media screen and (max-width: 767px){
 .post-cont .blind-m {display: none;}
 .date { width: 80px; }
+.post-cont .table-list {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+}
+.promo-list .img-list .text-area {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+}
+.promo-list .img-list .text-area {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .post-cont .blind-m {display: none;}
+    .icon{
+            width: 60px;
+        }
+    .table-list { width: 550px;}
+    .file {
+        width: 50px;
+    }
+    .date { width: 100px;}
+    .view-n { width: 50px; }
+    
+    .promo-list .img-list .text-area {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 1023px){
+    .post-cont .blind-m {display: block;}
+    .date { width: 100px; }
+    .promo-list .img-list{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
+        gap: 8px;
+    }
+    .post-cont .table-list {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .promo-list .img-list .text-area {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .icon{
+        width: 60px;
+    }
+    .table-list { width: 590px;}
+    .file {
+        width: 50px;
+    }
+    .view-n { width: 50px; }
+    
 }
