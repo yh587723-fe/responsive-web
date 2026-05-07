@@ -129,7 +129,12 @@ dl, dt, dd { font-size: inherit; }
     
 }
 
-
+.popular-books-area .libary ul {
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+}
 .popular-books-area fieldset dl {
     display: flex;
     width: 100%;
@@ -138,10 +143,14 @@ dl, dt, dd { font-size: inherit; }
     background-color: #f7f7f7;
     
 }
+.popular-books-area .libary ul li {
+    border: none;
+}
+
 .popular-books-area fieldset dt {
 
     padding: 10px;
-    width: 24%;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -169,9 +178,8 @@ dl, dt, dd { font-size: inherit; }
     border: 1px solid #c8c8c8;
     background-color: #fff;
     font-weight: 500;
-    padding: 1px;
+    padding: 0 10px;
     height: 32px;
-    font-size: 14px;
     line-height: 1.4;
 }
 
@@ -193,8 +201,10 @@ fieldset dl { border-bottom: 1px solid #ddd;}
 .best-book-list li:first-child {
     border-top: 2px solid #555;
 }
-.col-Search { 
+.col-Search {
+    height: 42px; 
     width: 100%;
+    margin-bottom: 20px;
     border: 1px solid #727272;
 }
 
@@ -239,12 +249,25 @@ label {
 
 
 @media screen and (max-width: 767px){
-    
+fieldset {width: 100%;}    
 .post-cont .blind-m {display: none;}
 .post-cont .date {width: 80px;}
 .card .text-area button { height: 42px;}
+.loanPeriod {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    overflow: visible;
+}
+.loanPeriod button {
+    white-space: normal;
+}
+
 
 }
+
+
 
 @media screen and (min-width: 768px){
 .post-cont .blind-m {display: block;}
@@ -259,10 +282,19 @@ label {
 .tab-btn li {
     font-size: 20px;
 }
+.loanPeriod {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
 }
 
 
+
+
 @media screen and (min-width: 1023px){
+body {font-size: 17px;}
 .post-cont .blind-m {display: block;}
 .date { width: 100px; }
 .img-list-area {
@@ -277,11 +309,20 @@ label {
     position: absolute; top:30px; right: 0px;
     width: 100px;
     height: 45px;
+    justify-content: center;
+    align-items: center;
     
 }
 .card { position: relative; }
 .card .text-area {display: flex;}
 .card .text-area button { position: absolute; top:75px; right: 8px; width: 170px; height: 54px;}
+.card-area { position: relative; }
+.card-area .col-Search { 
+    width: 170px; 
+    height: 50px;
+    position: absolute; top:80px; 
+    right: 50px; }
+
 }
 
 
