@@ -87,7 +87,7 @@ dl, dt, dd { font-size: inherit; }
 
 .text-tit {
     display: -webkit-box;
-    -webkit-line-clamp: 2;   /* 몇 줄까지 보여줄지 */
+    -webkit-line-clamp: 3;   /* 몇 줄까지 보여줄지 */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: clip;
@@ -130,7 +130,7 @@ dl, dt, dd { font-size: inherit; }
 }
 
 .popular-books-area .libary ul {
-    width: 250px;
+    
     height: 40px;
     background-color: #fff;
     border: 1px solid #c8c8c8;
@@ -140,7 +140,7 @@ dl, dt, dd { font-size: inherit; }
     width: 100%;
     align-items: stretch;
     border-bottom: 1px solid #e2e2e2;
-    background-color: #f7f7f7;
+    background-color: #f8f8fa
     
 }
 .popular-books-area .libary ul li {
@@ -150,19 +150,18 @@ dl, dt, dd { font-size: inherit; }
 .popular-books-area fieldset dt {
 
     padding: 10px;
-
+    width: 90px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    background-color: #f8f8fa;
     font-weight: 500;
     line-height: 1.2;
 }
 .popular-books-area fieldset dd {
     flex-wrap: wrap;
     width: 76%;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 .loanPeriod {
     width: 100%;
@@ -178,6 +177,7 @@ dl, dt, dd { font-size: inherit; }
     border: 1px solid #c8c8c8;
     background-color: #fff;
     font-weight: 500;
+    margin-bottom: 4px;
     padding: 0 10px;
     height: 32px;
     line-height: 1.4;
@@ -194,6 +194,7 @@ fieldset dl { border-bottom: 1px solid #ddd;}
     
  }
 .card .img-area {
+    flex-shrink: 0;
     width: 98px;
     height: 136px;
     background-color: #bdbdbd; 
@@ -245,31 +246,43 @@ label {
     background-color: #fff;
 }
 
-.text-area { width: 100%; }
+.card-area .text-area dt { 
+    width: 100%; 
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4; 
+    margin-bottom: 10px;
+}
+
 
 
 @media screen and (max-width: 767px){
+body {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
 fieldset {width: 100%;}    
 .post-cont .blind-m {display: none;}
 .post-cont .date {width: 80px;}
 .card .text-area button { height: 42px;}
 .loanPeriod {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    white-space: normal;
-    overflow: visible;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
 }
-.loanPeriod button {
+.popular-books-area dd {
     white-space: normal;
 }
-
-
+.popular-books-area ul {
+    white-space: normal;
+}
 }
 
 
 
 @media screen and (min-width: 768px){
+body { font-size: 17px; }
 .post-cont .blind-m {display: block;}
 .date { width: 100px; }
 .img-list-area {
@@ -278,6 +291,7 @@ fieldset {width: 100%;}
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 }
+.card .img-area {width: 143px; height: 198px;}
 .card .text-area button { height: 42px;}
 .tab-btn li {
     font-size: 20px;
@@ -287,6 +301,10 @@ fieldset {width: 100%;}
     overflow: hidden;
     display: inline-block;
 }
+.card-area .text-area dt {
+    font-size: 22px;
+}
+
 
 }
 
@@ -313,15 +331,24 @@ body {font-size: 17px;}
     align-items: center;
     
 }
+.popular-books-area .libary ul {
+    width: 250px;
+}
 .card { position: relative; }
 .card .text-area {display: flex;}
 .card .text-area button { position: absolute; top:75px; right: 8px; width: 170px; height: 54px;}
 .card-area { position: relative; }
+.card .img-area {width: 143px; height: 198px;}
 .card-area .col-Search { 
     width: 170px; 
     height: 50px;
     position: absolute; top:80px; 
     right: 50px; }
+
+.card-area .text-area dt { 
+    font-size: 23px;
+}
+
 
 }
 
