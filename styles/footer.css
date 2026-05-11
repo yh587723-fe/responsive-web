@@ -69,21 +69,34 @@ body { text-align: center; }
 
 
 
-
 @media screen and (min-width: 1023px){
-    .m-blind { display: block; }
+    .m-blind { display:flex; align-items:center; }
     body {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        
         text-align: left;
     }
-    .footer-top { display: flex; gap:16px;}
+    .footer-top { display: flex; gap:16px; align-items: center; width: 100%;}
     .lib-tit {font-size: 18px;}
     .footer-bottom .address, .footer-bottom span { font-size: 15px;}
     .bottom { font-size: 15px; }
     .privacy-policy, .user-terms { font-size: 19px; }
-    .footer-top p {font-size: 16px; display:flex; align-items: center; justify-content: center;}
+    .footer-top p {
+        font-size: 16px; 
+        margin:0 0 0 auto;
+        }
+
     .footer-group { display: flex; }
+
+    .footer-area{
+        width:100%;
+    }
+
+    .footer-group{
+        width:100%;
+    }
+
+    .footer-top{
+        width:100%;
+    }
 
 }
