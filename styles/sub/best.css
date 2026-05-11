@@ -254,6 +254,11 @@ label {
     margin-bottom: 10px;
 }
 
+.loan-best-area-a { display: none; }
+.popular-books-area { display: none; }
+.show {
+    display: block;
+}
 
 
 @media screen and (max-width: 767px){
