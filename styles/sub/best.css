@@ -33,21 +33,26 @@ dl, dt, dd { font-size: inherit; }
     text-align: center;
 }
 
-.ul-tit { 
-    display: flex;
-    width: 100%;
+.form-area .libary, .form-area .date { 
+    width: 50%;
     flex-wrap: wrap;
+    border: 1px solid #e2e2e2;
     background-color: #fff; 
 }   
-.ul-tit li.active{ 
+.libary .show{ 
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+}
+.date .show{ 
     display: block;
     padding: 10px 15px;
     width: 100%;
 }
 .ul-tit li{ 
+    display: none;
     height: 45px;
-    border: 1px solid #e2e2e2;
-    display: none; 
+
 }
 
 
@@ -217,14 +222,14 @@ fieldset dl { border-bottom: 1px solid #ddd;}
     border-top: 2px solid #555;
     border-bottom: 1px solid #e4e4e4;;
 }
- form ul li{
+.popular-books-area form ul li{
     border: 1px solid #e2e2e2;
     display: none;
 }
-form ul li.active { 
+.popular-books-area form ul li.active { 
     display: block;
 }
-form ul {
+.popular-books-area form ul {
     display: flex;
     flex-wrap: wrap;
 }

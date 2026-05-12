@@ -3,11 +3,11 @@ const tabBtnA = tabBtnArea.querySelector(".best-a")
 const tabBtnB = tabBtnArea.querySelector(".best-b")
 const mainContA = document.querySelector(".loan-best-area-a")
 const mainContB = document.querySelector(".popular-books-area")
-const formArea = document.querySelector(".form-area")
-const ulTitLibary = formArea.querySelector(".libary")
-const ulTitDate = formArea.querySelector(".date")
-const listA = ulTitLibary.querySelectorAll("li")
-const listB = ulTitDate.querySelectorAll("li")
+
+const ulA = document.querySelector(".libary")
+const liA = ulA.querySelectorAll(".libary li")
+const ulB = document.querySelector(".date")
+const liB = ulB.querySelectorAll(".date li")
 
 
 
@@ -34,12 +34,45 @@ tabBtnArea.addEventListener("click",function(e){
 
 });
 
-formArea.addEventListener("click",function(e){
-    const ul = e.target.closest("ul")
-    if(!ul) return
-    console.log(ul)
-    if(ul == ulTitLibary){
-        listA.classList.add("active")
-    }
+ulA.addEventListener("click",function(e){
+
+    this.classList.toggle("open");
+
+    liA.forEach(function(item){
+
+        if(!item.classList.contains("show")){
+
+            if(ulA.classList.contains("open")){
+
+                item.style.display = "block"
+
+            }else{
+
+                item.style.display = "none"
+            }
+        }
+
+    })
+
+})
+ulB.addEventListener("click",function(e){
+
+    this.classList.toggle("open");
+
+    liB.forEach(function(item){
+
+        if(!item.classList.contains("show")){
+
+            if(ulB.classList.contains("open")){
+
+                item.style.display = "block"
+
+            }else{
+
+                item.style.display = "none"
+            }
+        }
+
+    })
 
 })
