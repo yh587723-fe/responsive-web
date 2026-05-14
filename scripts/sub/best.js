@@ -4,8 +4,10 @@ const tabBtnB = tabBtnArea.querySelector(".best-b")
 const mainContA = document.querySelector(".loan-best-area-a")
 const mainContB = document.querySelector(".popular-books-area")
 
-const ulA = document.querySelector(".form-area .libary")
+const ulA = document.querySelector(".libary")
+const ulC = document.querySelector(".libary-b")
 const liA = ulA.querySelectorAll(".libary li")
+const liC = ulC.querySelectorAll(".libary-b li")
 const ulB = document.querySelector(".form-area .date")
 const liB = ulB.querySelectorAll(".date li")
 
@@ -84,6 +86,9 @@ ulA.addEventListener("click", (e)=>{
 ulB.addEventListener("click", (e)=>{
     dropdown(e);
 });
+ulC.addEventListener("click",(e)=>{
+    dropdown(e);
+})
 
 
 

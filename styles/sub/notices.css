@@ -93,7 +93,21 @@ form li:first-child {
     background-color: #000;
 }
 
-.paging-box { text-align: center; }
+.paging-box { text-align: center; margin: 40px 0; }
+.paging-box a {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    font-size: 20px; 
+    font-weight: 300;
+    color: #232323;
+    padding: 5px;
+}
+
+.paging-box a.active{
+    color: #fff;
+    background-color: #232323;
+}
 table thead { border-bottom: 1px solid #ababab; }
 table tbody tr { border-bottom: 1px solid #e4e4e4; }
 
@@ -221,6 +235,16 @@ td { padding: 10px 6px; }
         overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
         text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
         }
+    .paging-box a {
+        display: inline-block;
+        width: 20px;
+        height: 40px;
+        font-size: 14px; 
+        font-weight: 300;
+        color: #232323;
+        padding: 5px;
+    }
+    .paging-box { margin: 10px 0; }
 
 }
 
@@ -244,7 +268,15 @@ td { padding: 10px 6px; }
     overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
     text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
     }
-    
+    .paging-box a {
+        display: inline-block;
+        width: 35px;
+        height: 40px;
+        font-size: 16px; 
+        font-weight: 300;
+        color: #232323;
+        padding: 5px;
+    }
 }
 
 
