@@ -4,9 +4,9 @@ const tabBtnB = tabBtnArea.querySelector(".best-b")
 const mainContA = document.querySelector(".loan-best-area-a")
 const mainContB = document.querySelector(".popular-books-area")
 
-const ulA = document.querySelector(".libary")
+const ulA = document.querySelector(".form-area .libary")
 const liA = ulA.querySelectorAll(".libary li")
-const ulB = document.querySelector(".date")
+const ulB = document.querySelector(".form-area .date")
 const liB = ulB.querySelectorAll(".date li")
 
 
@@ -34,45 +34,74 @@ tabBtnArea.addEventListener("click",function(e){
 
 });
 
-ulA.addEventListener("click",function(e){
+// ulA.addEventListener("click",function(e){
 
-    this.classList.toggle("open");
+//     this.classList.toggle("open");
 
-    liA.forEach(function(item){
+//     liA.forEach(function(item){
 
-        if(!item.classList.contains("show")){
+//         if(!item.classList.contains("show")){
 
-            if(ulA.classList.contains("open")){
+//             if(ulA.classList.contains("open")){
 
-                item.style.display = "block"
+//                 item.style.display = "block"
 
-            }else{
+//             }else{
 
-                item.style.display = "none"
-            }
-        }
+//                 item.style.display = "none"
+//             }
+//         }
 
-    })
+//     })
 
-})
-ulB.addEventListener("click",function(e){
+// })
+// ulB.addEventListener("click",function(e){
 
-    this.classList.toggle("open");
+//     this.classList.toggle("open");
 
-    liB.forEach(function(item){
+//     liB.forEach(function(item){
 
-        if(!item.classList.contains("show")){
+//         if(!item.classList.contains("show")){
 
-            if(ulB.classList.contains("open")){
+//             if(ulB.classList.contains("open")){
 
-                item.style.display = "block"
+//                 item.style.display = "block"
 
-            }else{
+//             }else{
 
-                item.style.display = "none"
-            }
-        }
+//                 item.style.display = "none"
+//             }
+//         }
 
-    })
+//     })
 
-})
+// })
+
+
+ulA.addEventListener("click", (e)=>{
+    dropdown(e);
+});
+ulB.addEventListener("click", (e)=>{
+    dropdown(e);
+});
+
+
+
+function dropdown(e){
+    const clickLi = e.target.closest("li");
+    if(!clickLi) return;
+
+    const ul = clickLi.parentElement;
+
+    clickLi.classList.add("active");
+    [...ul.children]
+
+        .filter(function(child){
+            return child != clickLi;
+        })
+        .forEach(function(child){
+            child.classList.remove("active");
+        })
+
+    ul.classList.toggle("show");
+}

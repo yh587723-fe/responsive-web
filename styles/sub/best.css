@@ -4,7 +4,6 @@ h1 {font-size: 26px;}
 
 #main .main-top { padding: 20px 8px; border-bottom: 1px solid #e2e2e2; border-top: 1px solid #e2e2e2;;}
 #main .main-content { padding-top: 30px; }
-#main .loan-best-area-a form {display: flex;}
 dl, dt, dd { font-size: inherit; }
 
 .loan-best-area-a fieldset { 
@@ -18,7 +17,6 @@ dl, dt, dd { font-size: inherit; }
 .loan-best-area-a .form-area {
     width: 100%;
     margin-bottom: 25px;
-    padding: 20px 15px;
     background-color: #f7f7f7;
 }
 .tab-btn {
@@ -33,33 +31,55 @@ dl, dt, dd { font-size: inherit; }
     text-align: center;
 }
 
+.form-area {
+    position: relative;
+    width: 100%;
+    height: 118px;
+}
+.form-area fieldset {
+   
+    width: 95%;
+}
+
 .form-area .libary, .form-area .date { 
-    width: 50%;
+    z-index: 10;
+    width: 45%;
     flex-wrap: wrap;
     border: 1px solid #e2e2e2;
     background-color: #fff; 
 }   
-.libary .show{ 
+
+.libary { position: absolute; top:20px;  left: 4%; } 
+.date   { position: absolute; top:20px;  left: 51%; } 
+.libary .active{ 
     display: block;
     padding: 10px 15px;
     width: 100%;
 }
-.date .show{ 
+.date .active{ 
     display: block;
     padding: 10px 15px;
     width: 100%;
 }
-.ul-tit li{ 
+.form-area li{ 
     display: none;
     height: 45px;
 
 }
+.form-area li.active {
+    display: block;
+}
+.libary.show li{display: block;}
+.libary li.show {display: block;}
+.date.show li {display: block;}
+.date li.show  {display: block;}
 
 
 .loan-best-area-a form {
     background-color: #f7f7f7;
 }
 .loan-best-area-a .search-btn {
+    position: absolute; bottom: 10px; left: 4%;
     margin-top: 6px;
     text-align: center;
     background-color: #000;
@@ -272,6 +292,14 @@ body {
     line-height: 1.4;
 }
 
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    height: 36px;
+}
+
 fieldset {width: 100%;}    
 .post-cont .blind-m {display: none;}
 .post-cont .date {width: 80px;}
@@ -293,6 +321,14 @@ fieldset {width: 100%;}
 
 @media screen and (min-width: 768px){
 body { font-size: 17px; }
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    height: 36px;
+}
 .post-cont .blind-m {display: block;}
 .date { width: 100px; }
 .img-list-area {
@@ -332,7 +368,7 @@ body {font-size: 17px;}
     gap: 8px;
 }
 
-.form-area { display: flex; position: relative; }
+.form-area { display: flex; }
 .search-btn { 
     position: absolute; top:30px; right: 0px;
     width: 100px;
