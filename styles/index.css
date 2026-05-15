@@ -252,8 +252,6 @@
 .swiper { overflow: hidden; }
 .swiper-wrapper {
     display: flex;
-    width: 100%;
-    overflow: hidden;
 }
 .popup-zone .swiper-slide {
     width: 280px;
