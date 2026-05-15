@@ -7,8 +7,8 @@ const postA = document.querySelector(".notices")
 const postB = document.querySelector(".notices-b")
 const postC = document.querySelector(".promo-list")
 
-const libaryListTit = document.querySelector("fieldset .libary")
-const choiceTit = document.querySelector("fieldset .choice")
+const libaryListTit = document.querySelector("fieldset .library-ch")
+const choiceTit = document.querySelector("fieldset .subject-ch")
 const libaryList = libaryListTit.querySelectorAll("li")
 
 // 첫화면

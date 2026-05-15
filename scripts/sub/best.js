@@ -36,49 +36,6 @@ tabBtnArea.addEventListener("click",function(e){
 
 });
 
-// ulA.addEventListener("click",function(e){
-
-//     this.classList.toggle("open");
-
-//     liA.forEach(function(item){
-
-//         if(!item.classList.contains("show")){
-
-//             if(ulA.classList.contains("open")){
-
-//                 item.style.display = "block"
-
-//             }else{
-
-//                 item.style.display = "none"
-//             }
-//         }
-
-//     })
-
-// })
-// ulB.addEventListener("click",function(e){
-
-//     this.classList.toggle("open");
-
-//     liB.forEach(function(item){
-
-//         if(!item.classList.contains("show")){
-
-//             if(ulB.classList.contains("open")){
-
-//                 item.style.display = "block"
-
-//             }else{
-
-//                 item.style.display = "none"
-//             }
-//         }
-
-//     })
-
-// })
-
 
 ulA.addEventListener("click", (e)=>{
     dropdown(e);
