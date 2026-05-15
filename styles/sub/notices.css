@@ -1,4 +1,10 @@
+.search input {
+    height: 46px;
+}
 
+.subject-ch li {
+    height: 47px;
+}
 .base-form {
     height: 120px;
     border: 0 none;
@@ -14,7 +20,7 @@
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden;
-    position: absolute; left: 10px; top: 0;
+    position: absolute; left: 10px; top: 8px;
     z-index: 1;
 }
 .base-form .library-ch.show {
@@ -35,7 +41,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-    position: absolute; left: 0; top: 0;
+    position: absolute; left: 10px; top: 54px;
 }
 
 .base-form l {
@@ -54,7 +60,6 @@
 }
 .base-form ul.show li {
     display: block;
-    border-top: 1px solid #e2e2e2;
 }
 .base-form ul.show li:first-child {
     border-top: 0 none;
@@ -62,9 +67,9 @@
 
 .base-form .search div {
     width: calc(80% - 4px);
-    position: absolute; left: calc(20% + 4px); top: 0;
+    position: absolute; left: calc(23% + 5px); top: 56px;
     display: flex;
-    gap: 4px;
+    gap: 6px;
 }
 
 .base-form input {
@@ -136,7 +141,7 @@ form ul li{
 }
 form ul li.active { 
     display: block;
-    padding: 10px 15px;
+    padding: 10px 5px;
     width: 100%;   
 }
 form ul {
@@ -283,6 +288,9 @@ td.date { color: #464646; }
 td { padding: 10px 6px; }
 
 @media screen and (max-width: 767px){
+    .base-form .search div {
+        width: calc(87% - 4px);
+    }
     .tab-btn li { font-size: 18px; }
     .post-cont .blind-m {display: none;}
     .date { width: 100px; }
@@ -318,6 +326,12 @@ td { padding: 10px 6px; }
 
 
 @media screen and (min-width: 768px){
+
+    
+    .base-form .search div {
+        width: calc(80% - 4px);
+    }
+    
     .post-cont .blind-m {display: none;}
     .icon{
             width: 60px;
@@ -378,8 +392,8 @@ td { padding: 10px 6px; }
     
 
 
-    .base-form {
-        height: 68px;
+    .base-form {    
+        height: 102px;   
     }
     .base-form fieldset {
         display: flex;
@@ -387,20 +401,32 @@ td { padding: 10px 6px; }
 
     .base-form .library-ch {
         width: calc(30% - 14px);
+        position: absolute; top:25px;
     }
 
     .base-form .search {
         margin-top: 0;
         width: calc(70% - 10px);
-        position: absolute; top: 10px; bottom: auto;
+        position: absolute; top: 25px; bottom: auto;
     }
-    .base-form .search .subject-ch {
-        width: 50%;
+    .base-form .search ul {
+        position: absolute;
+        left: 1px;
+        top: -1px;
+    }
+    .base-form button {
+        width: 30%;
     }
     .base-form .search button {
         padding: 10px 0;
         font-size: 18px;
         box-sizing: border-box;
     }
+    .base-form .search div {
+            position: absolute;
+            left: calc(20% + 5px);
+            top: 0;
+    }
+
     
 }
