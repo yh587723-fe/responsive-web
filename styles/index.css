@@ -249,13 +249,13 @@
     margin-bottom: 25px; 
     color: #464646;  
 }
-.banner-area { overflow: hidden; }
-.img-area {
+.swiper { overflow: hidden; }
+.swiper-wrapper {
     display: flex;
     width: 100%;
     overflow: hidden;
 }
-.popup-zone .img-box {
+.popup-zone .swiper-slide {
     width: 280px;
     height: 280px;
     margin-right: 15px;
@@ -673,7 +673,7 @@
     .feature-area li span { padding: 15px;}
     
     /*팝업존*/ 
-    .popup-zone .img-box {
+    .popup-zone .swiper-slide {
         width: 400px;
         height: 400px;
     }
